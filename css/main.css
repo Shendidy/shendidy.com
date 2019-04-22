@@ -45,5 +45,21 @@ body, html {
 .pHeader {
   margin: auto;
   color: #fff;
-  flex: 3;
+  flex: 2;
+}
+
+.languageDiv {
+  flex:1;
+  display: flex;
+  flex-direction: column;
+}
+
+.langLogoDiv {
+  background-color: red;
+  flex: 1;
+}
+
+.langSelectDiv {
+  background-color: blue;
+  flex: 1;
 }
