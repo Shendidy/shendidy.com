@@ -23,7 +23,7 @@ body, html {
 
 .scrollable {
   overflow-y: auto;
-  padding-right: 10px;
+  padding: 15px 10px 15px 2px;
 }
 
 /* Header */
@@ -94,22 +94,32 @@ body, html {
 
 .bodyRightDiv {
   box-sizing: border-box;
-  background-color: red;
+  /* background-color: red; */
   order: 2;
   box-sizing: border-box;
   flex-basis: 63%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .mainBodyDiv {
   box-sizing: border-box;
-  background-color: blue;
-  display: flex;
-  flex-direction: column;
+  /* background-color: blue; */
+  border: black solid 1px;
+  border-radius: 25px;
+  order: 2;
+  flex-basis: 73%;
 }
 
 .topRightDiv {
   box-sizing: border-box;
-  background-color: yellow;
+  /* background-color: yellow; */
+  border: black solid 1px;
+  border-radius: 25px;
+  order: 1;
+  flex-basis: 25%;
 }
 
 .menuBarDiv {
@@ -117,7 +127,6 @@ body, html {
   /* background-color: green; */
   border: black solid 1px;
   border-radius: 25px;
-  padding: 15px 5px 15px 2px;
   order: 1;
   flex-basis: 35%;
 }
