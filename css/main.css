@@ -92,6 +92,10 @@ body, html {
   justify-content: space-between;
 }
 
+.mainDiv p:nth-child(1) {
+  color: red;
+}
+
 .bodyRightDiv {
   box-sizing: border-box;
   /* background-color: red; */
@@ -106,7 +110,6 @@ body, html {
 
 .mainBodyDiv {
   box-sizing: border-box;
-  /* background-color: blue; */
   border: black solid 1px;
   border-radius: 25px;
   order: 2;
@@ -115,7 +118,6 @@ body, html {
 
 .topRightDiv {
   box-sizing: border-box;
-  /* background-color: yellow; */
   border: black solid 1px;
   border-radius: 25px;
   order: 1;
@@ -124,7 +126,6 @@ body, html {
 
 .menuBarDiv {
   box-sizing: border-box;
-  /* background-color: green; */
   border: black solid 1px;
   border-radius: 25px;
   order: 1;
@@ -144,20 +145,21 @@ body, html {
 }
 
 /* Media options */
-@media (max-width: 440px) {
+@media (max-width: 730px) {
   .mainDiv {
     flex-direction: column;
+    display: flex;
   }
 
   .header, .mainBody, .footer {
     width: 100%;
   }
 
-  .bodyRightDiv, .menuBarDiv {
-    min-height: 150px;
+  .menuBarDiv {
+    display: none;
   }
-}
 
-@media (min-width: 430px) {
-  
+  .bodyRightDiv {
+    flex-basis: 100%;
+  }
 }
