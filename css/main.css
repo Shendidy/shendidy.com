@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  border: 0;
 }
 
 body, html {
@@ -39,10 +38,13 @@ body, html {
   padding-left: 6px;
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
 }
 
 .headerDivs {
   box-sizing: border-box;
+  margin: auto;
 }
 
 .logoHeader {
@@ -58,8 +60,7 @@ body, html {
 
 .pHeader {
   margin: auto;
-  color: #fff;
-  flex-basis: 48%;
+  color: #15ff00;
 }
 
 .languageDiv {
@@ -80,12 +81,45 @@ body, html {
 }
 
 /* Main Body */
-.mainBody {
+.mainDiv {
   width: 90%;
-  height: 85%;
+  height: 83%;
   margin: auto;
   border-radius: 25px;
   background-color: rgba(255,255,255,0.5);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bodyRightDiv {
+  box-sizing: border-box;
+  background-color: red;
+  order: 2;
+  box-sizing: border-box;
+  flex-basis: 63%;
+}
+
+.mainBodyDiv {
+  box-sizing: border-box;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+}
+
+.topRightDiv {
+  box-sizing: border-box;
+  background-color: yellow;
+}
+
+.menuBarDiv {
+  box-sizing: border-box;
+  /* background-color: green; */
+  border: black solid 1px;
+  border-radius: 25px;
+  padding: 15px 5px 15px 2px;
+  order: 1;
+  flex-basis: 35%;
 }
 
 /* Footer */
@@ -101,9 +135,20 @@ body, html {
 }
 
 /* Media options */
-@media (max-width: 430px) {
+@media (max-width: 440px) {
+  .mainDiv {
+    flex-direction: column;
+  }
+
   .header, .mainBody, .footer {
     width: 100%;
-    color: white;
   }
+
+  .bodyRightDiv, .menuBarDiv {
+    min-height: 150px;
+  }
+}
+
+@media (min-width: 430px) {
+  
 }
