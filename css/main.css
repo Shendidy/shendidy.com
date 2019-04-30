@@ -124,6 +124,19 @@ body, html {
   flex-basis: 25%;
 }
 
+.menuImgDiv {
+  display: none;
+  text-align: right;
+  margin: 5px;
+  font-size: 0.8em;
+  color: #00f;
+}
+
+.menuImgDiv  :hover {
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
 .menuBarDiv {
   box-sizing: border-box;
   border: black solid 1px;
@@ -157,9 +170,22 @@ body, html {
 
   .menuBarDiv {
     display: none;
+    flex-basis: 100%;
   }
 
   .bodyRightDiv {
     flex-basis: 100%;
+  }
+
+  .menuImgDiv {
+    display: block;
+  }
+
+  div.nav-expanded{ /*for menu animation*/
+    display: block;
+  }
+
+  div.nav-non-expanded{ /*for menu animation*/
+    display: none;
   }
 }
