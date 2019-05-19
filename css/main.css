@@ -32,7 +32,7 @@ body, html {
   max-height: 50px;
   width: 90%;
   margin: 0 auto;
-  background-color: rgba(95,95,95,0.8);
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 25px;
   text-align: center;
   padding-left: 6px;
@@ -47,37 +47,13 @@ body, html {
   margin: auto;
 }
 
-.logoHeader {
-  flex-basis: 25%;
-  display: flex;
-}
-
-.logoImg {
-  width: 100%;
-  height: auto;
-  max-height: 50px;
-}
-
 .pHeader {
   margin: auto;
   color: #15ff00;
 }
 
-.languageDiv {
-  margin-right: 8px;
-  flex-basis: 25%;
-  display: flex;
-  flex-direction: column;
-}
-
-.langLogoDiv {
-  color: #fff;
-  flex: 1;
-  padding-top: 4px;
-}
-
-.langSelectDiv {
-  flex: 1;
+#hName {
+  font-size: 1.75em;
 }
 
 /* Main Body */
@@ -86,10 +62,38 @@ body, html {
   height: 83%;
   margin: auto;
   border-radius: 25px;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 10px;
   display: flex;
   justify-content: space-between;
+}
+
+.divHeader {
+  position: sticky;
+  top: 0px;
+  height: 45px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 25px;
+  background: #000;
+  display: flex;
+}
+
+.divHeader ul {
+  margin: auto;
+}
+
+.divHeader li {
+  display: inline;
+}
+
+.divHeader a {
+  color: red;
+}
+
+.divHeader a:visited {
+  color: red;
 }
 
 .mainDiv p:nth-child(1) {
@@ -109,8 +113,12 @@ body, html {
 }
 
 .mainBodyDiv {
+  padding-top: 0px;
+  padding-left: 15px;
   box-sizing: border-box;
-  border: black solid 1px;
+  color: #15ff00;
+  border: #15ff00 solid 1px;
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 25px;
   order: 2;
   flex-basis: 73%;
@@ -118,7 +126,7 @@ body, html {
 
 .topRightDiv {
   box-sizing: border-box;
-  border: black solid 1px;
+  border: #15ff00 solid 1px;
   border-radius: 25px;
   order: 1;
   flex-basis: 25%;
@@ -129,7 +137,7 @@ body, html {
   text-align: right;
   margin: 5px;
   font-size: 0.8em;
-  color: #00f;
+  color: #15ff00;
 }
 
 .menuImgDiv  :hover {
@@ -139,7 +147,7 @@ body, html {
 
 .menuBarDiv {
   box-sizing: border-box;
-  border: black solid 1px;
+  border: #15ff00 solid 1px;
   border-radius: 25px;
   order: 1;
   flex-basis: 35%;
@@ -147,7 +155,7 @@ body, html {
 
 /* Footer */
 .footer {
-  background-color: rgba(95,95,95,0.8);
+  background-color: rgba(0, 0, 0, 0.7);
   width: 90%;
   margin: 0 auto;
   border-radius: 25px;
@@ -187,5 +195,11 @@ body, html {
 
   div.nav-non-expanded{ /*for menu animation*/
     display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .divHeader {
+    height: 65px;
   }
 }
