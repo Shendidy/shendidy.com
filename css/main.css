@@ -75,7 +75,7 @@ dl ul{
 .divHeader {
   position: sticky;
   top: 0px;
-  height: 45px;
+  height: 65px;
   text-align: center;
   width: 100%;
   margin: 0 auto;
@@ -201,7 +201,9 @@ dl ul{
   order: 1;
   flex-basis: 35%;
 }
-
+#imgLogo {
+width: 20%;
+}
 /* Footer */
 .footer {
   background-color: rgba(0, 0, 0, 0.7);
@@ -244,11 +246,5 @@ dl ul{
 
   div.nav-non-expanded{ /*for menu animation*/
     display: none;
-  }
-}
-
-@media (max-width: 400px) {
-  .divHeader {
-    height: 65px; /*to ensure menu bar in main div header covers all links
   }
 }
