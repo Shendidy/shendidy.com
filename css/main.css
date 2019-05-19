@@ -120,16 +120,7 @@ body, html {
   border: #15ff00 solid 1px;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 25px;
-  order: 2;
-  flex-basis: 73%;
-}
-
-.topRightDiv {
-  box-sizing: border-box;
-  border: #15ff00 solid 1px;
-  border-radius: 25px;
-  order: 1;
-  flex-basis: 25%;
+  flex-basis: 100%;
 }
 
 .menuImgDiv {
@@ -200,6 +191,6 @@ body, html {
 
 @media (max-width: 400px) {
   .divHeader {
-    height: 65px;
+    height: 65px; /*to ensure menu bar in main div header covers all links
   }
 }
