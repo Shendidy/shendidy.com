@@ -133,6 +133,11 @@ dl ul{
   padding: 5px;
 }
 
+.mainBodyDiv table {
+  width: 95%;
+  margin: 0 auto;
+}
+
 .mainBodyDiv th {
   text-align: center;
 }
