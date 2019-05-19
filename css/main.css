@@ -36,7 +36,7 @@ dl ul{
   max-height: 50px;
   width: 90%;
   margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.83);
   border-radius: 25px;
   text-align: center;
   padding-left: 6px;
@@ -100,10 +100,6 @@ dl ul{
   color: red;
 }
 
-.mainDiv p:nth-child(1) {
-  color: red;
-}
-
 .bodyRightDiv {
   box-sizing: border-box;
   /* background-color: red; */
@@ -149,6 +145,10 @@ dl ul{
 .mainBodyDiv dd {
   margin-left: 25px;
   padding-top: 5px;
+}
+
+.detailsDiv p {
+  color: white;
 }
 
 .detailsDiv a {
@@ -197,6 +197,7 @@ dl ul{
 .menuBarDiv {
   box-sizing: border-box;
   border: #15ff00 solid 1px;
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 25px;
   order: 1;
   flex-basis: 35%;
@@ -231,7 +232,7 @@ width: 20%;
 
 /* Footer */
 .footer {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.83);
   width: 90%;
   margin: 0 auto;
   border-radius: 25px;
