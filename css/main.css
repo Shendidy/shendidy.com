@@ -200,10 +200,35 @@ dl ul{
   border-radius: 25px;
   order: 1;
   flex-basis: 35%;
+  color: white;
+  padding-left: 15px;
 }
+
 #imgLogo {
 width: 20%;
 }
+/* 
+.menuBarDiv ol {
+  text-align: left;
+  margin-left: 15px;
+  list-style-type: upper-roman;
+} */
+
+.menuBarDiv ul {
+  text-align: left;
+  margin-left: 15px;
+  line-height: 150%;
+  font-size: 110%;
+}
+
+.menuBarDiv a {
+  color: rgb(0, 110, 255);
+}
+
+.menuBarDiv a:visited {
+  color: rgb(0, 110, 255);
+}
+
 /* Footer */
 .footer {
   background-color: rgba(0, 0, 0, 0.7);
