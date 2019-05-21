@@ -1,5 +1,7 @@
+.mainBodyDiv {
+  display: flex;
+}
+
 #game{
   margin: auto;
 }
-
-
